@@ -83,7 +83,7 @@ public class ITDQueue {
 	}
 
 	private static void menuOption() {
-		System.out.println("Chose and operation:");
+		System.out.println("Chose an operation:");
 		System.out.println("1. Enqueue");
 		System.out.println("2. dequeue");
 		System.out.println("3. Top");
