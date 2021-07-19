@@ -1,5 +1,8 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LinkedListUtil {
 	
 	public static void printListNodes(ListNode ref) {
@@ -28,6 +31,21 @@ public class LinkedListUtil {
 			curPoition = n;
 		}
 		return node;
+	}
+	
+	public static int[] flatten(ListNode node) {
+		List<Integer> res = new ArrayList<>();
+		ListNode itr = node;
+		while(itr!=null) {
+			res.add(itr.val);
+			itr = itr.next;
+		}
+		int[] result = new int[res.size()];
+		for (int i = 0; i < result.length; i++) {
+			result[i] = res.get(i);
+		}
+		return result;
+		
 	}
 
 }
