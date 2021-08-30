@@ -5,6 +5,7 @@ public class CycleDetection {
 	public void dfs(Vertex vertex) {
 		
 		vertex.setBeingVisited(true);
+		
 		for (Vertex v: vertex.getAdjacencyList()) {
 			if(v.isBeingVisited()) {
 				System.out.println("Cycle detection vertex->" + v);
